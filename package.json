@@ -1,0 +1,43 @@
+{
+  "name": "fast-dts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Fast TypeScript Definition File Generator",
+  "license": "MIT",
+  "repository": "https://github.com/erwinheldy/fast-dts",
+  "bugs": {
+    "url": "https://github.com/erwinheldy/fast-dts/issues"
+  },
+  "keywords": [
+    "dts",
+    "fast",
+    "dts-generator"
+  ],
+  "source": "./src/fast-dts.ts",
+  "main": "./dist/fast-dts.js",
+  "module": "./dist/fast-dts.js",
+  "types": "./dist/fast-dts.d.ts",
+  "bin": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "depcheck": "depcheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "oxc-transform": "0.16.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.21.2",
+    "@types/node": "20.14.9",
+    "depcheck": "1.4.7",
+    "eslint": "9.6.0",
+    "typescript": "5.5.2",
+    "vite": "5.3.2"
+  }
+}
