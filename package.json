@@ -1,7 +1,7 @@
 {
   "name": "fast-dts",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast TypeScript Definition File Generator",
   "license": "MIT",
   "repository": "https://github.com/erwinheldy/fast-dts",
@@ -30,7 +30,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "oxc-transform": "0.16.1"
+    "oxc-transform": "^0.16.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.21.2",
